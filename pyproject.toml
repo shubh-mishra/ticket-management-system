@@ -1,0 +1,28 @@
+[project]
+name = "ticket-system"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "shubh-mishra",email = "shubhamshekhar56@gmail.com"}
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi (>=0.162.0,<0.163.0)",
+    "uvicorn (>=0.54.0,<0.55.0)",
+    "sqlalchemy (>=2.1.8,<3.0.0)",
+    "alembic (>=1.20.1,<2.0.0)",
+    "pydantic-settings (>=2.16.2,<3.0.0)",
+    "psycopg2-binary (>=2.9.13,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.2.0,<10.0.0)",
+    "ruff (>=0.17.4,<0.18.0)",
+    "httpx (>=0.28.1,<0.29.0)"
+]
